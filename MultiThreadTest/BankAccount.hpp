@@ -1,5 +1,9 @@
 #include <iostream>
 #include <mutex>
+#include <string>
+#include <fstream>
+#include <chrono>
+#include <iomanip>
 
 class BankAccount {
 public:
@@ -11,4 +15,5 @@ public:
 private:
 	int balance;
 	mutable std::mutex mtx; // Mutex to protect the balance
+	void logTransaction(const std::string& message) const;
 };

@@ -2,7 +2,7 @@
 #include <thread>
 #include "BankAccount.hpp"
 
-using namespace std;
+//using namespace std;
 
 #define NoDepostTask 30
 #define NoWithdrawTask 10
@@ -11,7 +11,6 @@ void depositTask(BankAccount& bnkacc, int amount){
     for (int i = 0; i < NoDepostTask; i++) {
         bnkacc.deposit(amount);
         //cout << "Deposit thread" << endl;
-
     }
 }
 

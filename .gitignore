@@ -1,1 +1,22 @@
-/.vs
+# Ignore build directories
+[Dd]ebug/
+[Rr]elease/
+x64/
+
+
+# Ignore user-specific files
+*.vcxproj.user
+
+# Ignore log files
+*.log
+
+# Ignore binary and intermediate files
+*.exe
+*.obj
+*.pdb
+*.ilk
+*.lib
+*.dll
+
+# Ignore Visual Studio IDE files
+.vs/
