@@ -1,7 +1,7 @@
 #include "BankAccount.hpp"
 
 
-BankAccount::BankAccount() : balance(0),name("Unknown") {}
+BankAccount::BankAccount() : balance(0), name("Unknown") {}
 
 BankAccount::BankAccount(int initialBalance, const std::string& AccountName) : balance(initialBalance), name(AccountName) {}
 

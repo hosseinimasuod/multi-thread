@@ -1,3 +1,6 @@
+#ifndef BANKACCOUNT_HPP
+#define BANKACCOUNT_HPP
+
 #include <iostream>
 #include <mutex>
 #include <string>
@@ -21,3 +24,5 @@ private:
 	mutable std::mutex mtx; // Mutex to protect the balance
 	void logTransaction(const std::string& message) const;
 };
+
+#endif // BANKACCOUNT_HPP
